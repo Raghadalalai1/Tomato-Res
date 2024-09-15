@@ -1,0 +1,141 @@
+.cart {
+    width: 100%;
+    
+}
+
+.cart-items {
+    padding-top: 140px;
+}
+
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: #49557e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cart-items-item {
+    margin: 10px 0px;
+    color: rgb(59, 57, 57);
+}
+
+.cart-items-item img {
+    width: 70px;
+}
+
+.cart hr {
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.cross {
+    cursor: pointer;
+    color: tomato;
+    font-size: large;
+    font-weight: 700;
+
+}
+
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cart-total {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.cart-total hr {
+    margin: 10px 0px;
+}
+
+.cart-total button {
+    padding: 12px 0px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.cart-promocode {
+    flex: 1;
+}
+
+.cart-promocode p {
+    color: #555;
+}
+
+.cart-promocode-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+.cart-promocode-input input {
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.cart-promocode-input button {
+    width: 150px;
+    padding: 12px 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width:850px) {
+
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .cart-promocode {
+        justify-content: start;
+    }
+}
+
+@media (max-width:600px) {
+
+    .cart-items-title {
+        font-size: 13px;
+    }
+
+    .cart-items-title p {
+        margin: 0px 10px;
+    }
+
+    .cross {
+        font-size: 13px;
+    }
+
+    .cart-items-item img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

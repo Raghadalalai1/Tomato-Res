@@ -1,0 +1,78 @@
+.headar {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./header_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+
+}
+.heaer-content{
+    display: flex;
+    align-items: self-start;
+    gap: 25px;
+    width: 65%;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-30%);
+    padding-left: 40px;
+    animation: feadin 3s ;
+   
+}
+.heaer-content h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+  
+}
+.heaer-content button{
+    color: #747474;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+   transition: 0.5s;
+}
+.heaer-content button:hover{
+    color:white;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+}
+.heaer-content p{
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+
+
+}
+@media(max-width:992px){
+    .heaer-content{
+        width: 80%;
+        transform: translate(0%,-50%);
+    }
+}
+@media(max-width:768px){
+    .heaer-content p{
+        font-size: 16px !important;
+        line-height: 25px !important;
+    }
+    .heaer-content h2{
+        font-size: 32px !important;
+    }
+}
+@media(max-width:576px){
+
+    .heaer-content h2{
+        font-size: 30px !important;
+    }
+    .heaer-content{
+        width: 95%;
+    }
+}
